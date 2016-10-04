@@ -33,7 +33,9 @@ test:
 
 about:
   home: https://github.com/liris/websocket-client
-  license: LGPL
+  license: LGPL 2.1
+  license_file: LICENSE
+  license_family: LGPL
   summary: 'WebSocket client for python. hybi13 is supported.'
 
 extra:
