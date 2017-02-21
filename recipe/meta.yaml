@@ -3,7 +3,7 @@
 {%set compress_type = "tar.gz" %}
 {%set version = "0.40.0" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "678b246d816b94018af5297e72915160e2feb042e0cde1a9397f502ac3a52f41" %}
+{%set hash_val = "40ac14a0c54e14d22809a5c8d553de5a2ae45de3c60105fae53bcb281b3fe6fb" %}
 {%set build_num = "0" %}
 
 package:
