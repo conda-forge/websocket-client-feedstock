@@ -1,26 +1,28 @@
 {%set name = "websocket-client" %}
 {%set snakename = "websocket_client" %}
-{%set version = "0.37.0" %}
+{%set compress_type = "tar.gz" %}
+{%set version = "0.40.0" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "678b246d816b94018af5297e72915160e2feb042e0cde1a9397f502ac3a52f41" %}
+{%set hash_val = "40ac14a0c54e14d22809a5c8d553de5a2ae45de3c60105fae53bcb281b3fe6fb" %}
+{%set build_num = "0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ snakename }}/{{ snakename }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ snakename }}/{{ snakename }}-{{ version }}.{{ compress_type }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: {{ build_num }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
+  
 requirements:
   build:
     - python
     - setuptools
-    - six
 
   run:
     - python
@@ -37,9 +39,9 @@ about:
   license_file: LICENSE
   license_family: LGPL
   summary: 'WebSocket client for python. hybi13 is supported.'
+  dev_url: https://github.com/liris/websocket-client
 
 extra:
   recipe-maintainers:
     - pmlandwehr
     - scopatz
-
