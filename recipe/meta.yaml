@@ -17,13 +17,13 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: script: python -m pip install --no-deps --ignore-installed .
   noarch: python
-  
+
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
