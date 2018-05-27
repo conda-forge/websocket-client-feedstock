@@ -1,9 +1,9 @@
 {% set name = "websocket-client" %}
 {% set snakename = "websocket_client" %}
 {% set bundle = "tar.gz" %}
-{% set version = "0.47.0" %}
+{% set version = "0.48.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "a453dc4dfa6e0db3d8fd7738a308a88effe6240c59f3226eb93e8f020c216149" %}
+{% set hash_val = "18f1170e6a1b5463986739d9fd45c4308b0d025c1b2f9b88788d8f69e8a5eb4a" %}
 {% set build = 0 %}
 
 package:
@@ -17,13 +17,13 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
   noarch: python
-  
+
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
