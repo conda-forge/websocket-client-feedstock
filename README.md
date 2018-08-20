@@ -14,8 +14,9 @@ Summary: WebSocket client for python. hybi13 is supported.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/websocket-client-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/websocket-client-feedstock)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/websocket-client-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/websocket-client-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/websocket-client-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/websocket-client-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/websocket-client-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/websocket-client-feedstock/branch/master)
 
 Current release info
 ====================

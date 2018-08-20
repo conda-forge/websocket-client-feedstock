@@ -16,9 +16,9 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
-  noarch: python
+  # Cannot be no-arch due to bytecode issues.
 
 requirements:
   host:
