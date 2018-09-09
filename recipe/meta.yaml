@@ -1,9 +1,9 @@
 {% set name = "websocket-client" %}
 {% set snakename = "websocket_client" %}
 {% set bundle = "tar.gz" %}
-{% set version = "0.52.0" %}
+{% set version = "0.53.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "3c9924675eaf0b27ae22feeeab4741bb4149b94820bd3a143eeaf8b62f64d821" %}
+{% set hash_val = "c42b71b68f9ef151433d6dcc6a7cb98ac72d2ad1e3a74981ca22bc5d9134f166" %}
 
 package:
   name: {{ name }}
