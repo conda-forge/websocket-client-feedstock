@@ -15,7 +15,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1000
   script: python -m pip install --no-deps --ignore-installed .
   # Cannot be no-arch due to bytecode issues.
 
