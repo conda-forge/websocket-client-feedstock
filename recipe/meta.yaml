@@ -2,8 +2,6 @@
 {% set snakename = "websocket_client" %}
 {% set bundle = "tar.gz" %}
 {% set version = "0.56.0" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "1fd5520878b68b84b5748bb30e592b10d0a91529d5383f74f4964e72b297fd3a" %}
 
 package:
   name: {{ name }}
@@ -12,11 +10,11 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ snakename }}/{{ snakename }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  sha256: 1fd5520878b68b84b5748bb30e592b10d0a91529d5383f74f4964e72b297fd3a
 
 build:
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: "{{ PYTHON }} -m pip install . -vv"
   # Cannot be no-arch due to bytecode issues.
 
 requirements:
