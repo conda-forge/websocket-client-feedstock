@@ -1,7 +1,7 @@
 {% set name = "websocket-client" %}
 {% set snakename = "websocket_client" %}
 {% set bundle = "tar.gz" %}
-{% set version = "0.56.0" %}
+{% set version = "0.44.0" %}
 
 package:
   name: {{ name }}
@@ -10,7 +10,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ snakename }}/{{ snakename }}-{{ version }}.{{ bundle }}
-  sha256: 1fd5520878b68b84b5748bb30e592b10d0a91529d5383f74f4964e72b297fd3a
+  sha256: 15f585566e2ea7459136a632b9785aa081093064391878a448c382415e948d72
 
 build:
   number: 1
