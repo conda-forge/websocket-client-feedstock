@@ -13,7 +13,7 @@ source:
   sha256: d735b91d6d1692a6a181f2a8c9e0238e5f6373356f561bb9dc4c7af36f452010
 
 build:
-  number: 1
+  number: 2
   script: "{{ PYTHON }} -m pip install . -vv"
   # Cannot be no-arch due to bytecode issues.
 
@@ -34,8 +34,8 @@ test:
 about:
   home: https://github.com/liris/websocket-client
   license_file: LICENSE
-  license: LGPL 2.1
-  license_family: LGPL
+  license: BSD-3-Clause
+  license_family: BSD
   summary: 'WebSocket client for python. hybi13 is supported.'
   dev_url: https://github.com/liris/websocket-client
 
