@@ -1,7 +1,7 @@
 {% set name = "websocket-client" %}
 {% set snakename = "websocket_client" %}
 {% set bundle = "tar.gz" %}
-{% set version = "0.57.0" %}
+{% set version = "0.58.0" %}
 
 package:
   name: {{ name }}
@@ -10,11 +10,11 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ snakename }}/{{ snakename }}-{{ version }}.{{ bundle }}
-  sha256: d735b91d6d1692a6a181f2a8c9e0238e5f6373356f561bb9dc4c7af36f452010
+  sha256: 63509b41d158ae5b7f67eb4ad20fecbb4eee99434e73e140354dc3ff8e09716f
 
 build:
-  number: 4
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
   # Cannot be no-arch due to bytecode issues.
 
 requirements:
@@ -39,7 +39,7 @@ about:
   license_file: LICENSE
   license: BSD-3-Clause
   license_family: BSD
-  summary: 'WebSocket client for python. hybi13 is supported.'
+  summary: WebSocket client for python. hybi13 is supported.
   dev_url: https://github.com/liris/websocket-client
 
 extra:
