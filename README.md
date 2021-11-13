@@ -1,15 +1,17 @@
 About websocket-client
 ======================
 
-Home: https://github.com/liris/websocket-client
+Home: https://github.com/websocket-client/websocket-client/
 
-Package license: BSD-3-Clause
+Package license: LGPL-2.1-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/websocket-client-feedstock/blob/master/LICENSE.txt)
 
-Summary: WebSocket client for python. hybi13 is supported.
+Summary: WebSocket client for Python with low level API options
 
-Development: https://github.com/liris/websocket-client
+Development: https://github.com/websocket-client/websocket-client/
+
+Documentation: https://websocket-client.readthedocs.io/en/latest/
 
 Current build status
 ====================
@@ -326,6 +328,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@BastianZim](https://github.com/BastianZim/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@scopatz](https://github.com/scopatz/)
 
