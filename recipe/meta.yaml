@@ -39,7 +39,9 @@ about:
   dev_url: https://github.com/websocket-client/websocket-client/
   doc_url: https://websocket-client.readthedocs.io/en/latest/
   license: LGPL-2.1-or-later
-  license_file: LICENSE
+  license_file:
+    - COPYING.LESSER
+    - LICENSE
 
 extra:
   recipe-maintainers:
