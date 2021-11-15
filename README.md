@@ -1,9 +1,9 @@
 About websocket-client
 ======================
 
-Home: https://github.com/websocket-client/websocket-client/
+Home: https://github.com/websocket-client/websocket-client.git
 
-Package license: LGPL-2.1-or-later
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/websocket-client-feedstock/blob/master/LICENSE.txt)
 
@@ -331,4 +331,5 @@ Feedstock Maintainers
 * [@BastianZim](https://github.com/BastianZim/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@scopatz](https://github.com/scopatz/)
+* [@wshanks](https://github.com/wshanks/)
 

@@ -1,6 +1,5 @@
 {% set name = "websocket-client" %}
-{% set version = "1.1.0" %}
-
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/websocket-client-{{ version }}.tar.gz
-  sha256: b68e4959d704768fa20e35c9d508c8dc2bbc041fd8d267c0d7345cffe2824568
+  sha256: 8dfb715d8a992f5712fff8c843adae94e22b22a99b2c5e6b0ec4a1a981cc4e0d
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
+  # Cannot be no-arch due to bytecode issues.
 
 requirements:
   build:
@@ -34,17 +34,16 @@ test:
     - pip
 
 about:
-  home: https://github.com/websocket-client/websocket-client/
+  home: https://github.com/websocket-client/websocket-client.git
   summary: WebSocket client for Python with low level API options
   dev_url: https://github.com/websocket-client/websocket-client/
   doc_url: https://websocket-client.readthedocs.io/en/latest/
-  license: LGPL-2.1-or-later
-  license_file:
-    - COPYING.LESSER
-    - LICENSE
+  license: Apache-2.0
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
     - pmlandwehr
     - scopatz
     - BastianZim
+    - wshanks
