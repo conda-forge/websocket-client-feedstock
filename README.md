@@ -121,7 +121,6 @@ Feedstock Maintainers
 =====================
 
 * [@BastianZim](https://github.com/BastianZim/)
-* [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@scopatz](https://github.com/scopatz/)
 * [@wshanks](https://github.com/wshanks/)
 
