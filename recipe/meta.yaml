@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/websocket-client-{{ version }}.tar.gz
-  sha256: 6278a75065395418283f887de7c3beafb3aa68dada5cacbe4b214e8d26da499b
+  sha256: 5051b38a2f4c27fbd7ca077ebb23ec6965a626ded5a95637f36be1b35b6c4f81
 
 build:
   number: 0
