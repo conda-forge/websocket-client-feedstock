@@ -28,7 +28,7 @@ test:
     - websocket.tests
   commands:
     - pip check
-    - wsdump --help
+    - wsdump.py --help
   requires:
     - pip
 
