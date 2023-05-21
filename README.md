@@ -1,11 +1,11 @@
-About websocket-client
-======================
+About websocket-client-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/websocket-client-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/websocket-client/websocket-client.git
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/websocket-client-feedstock/blob/main/LICENSE.txt)
 
 Summary: WebSocket client for Python with low level API options
 
