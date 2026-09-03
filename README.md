@@ -196,6 +196,3 @@ Feedstock Maintainers
 * [@scopatz](https://github.com/scopatz/)
 * [@wshanks](https://github.com/wshanks/)
 
-
-<!-- dummy commit to enable rerendering -->
-
